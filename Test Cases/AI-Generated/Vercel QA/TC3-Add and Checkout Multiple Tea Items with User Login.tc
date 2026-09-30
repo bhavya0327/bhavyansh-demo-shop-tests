@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login, browse and filter teas, add multiple items to the cart, adjust quantities, and complete the checkout process.</description>
+   <name>TC3-Add and Checkout Multiple Tea Items with User Login</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>63f96e73-bb6c-4d17-aab2-55abbded671d</testCaseGuid>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;status&quot;: &quot;DRAFT&quot;, &quot;source&quot;: &quot;User Session&quot;}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <integratedEntity>
+      <productName>TRUETEST</productName>
+      <properties>
+         <entry>
+            <key>flowId</key>
+            <value>1ff5229a-5397-43e6-9014-d9a20c6ae07a</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <origin>TRUETEST</origin>
+   <variable>
+      <defaultValue>'product-sencha-green'</defaultValue>
+      <description>Step 4: Click on button addToCartItem (addToCartSenchaGreen2) - (Dynamic locator variable)</description>
+      <id>1bf7d323-b1a8-4e21-88cd-026464f207ff</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-masala-chai'</defaultValue>
+      <description>Step 6: Click on button addToCartItem (addToCartMasalaChai) - (Dynamic locator variable)</description>
+      <id>161442e1-5ef8-4cac-a054-0172c6ffdb18</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-assam-morning'</defaultValue>
+      <description>Step 8: Click on button addToCartItem (addToCartAssamMorning) - (Dynamic locator variable)</description>
+      <id>842f71db-5aaa-4a92-a012-418c706cc00e</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-tulsi-ginger'</defaultValue>
+      <description>Step 10: Click on button addToCartItem (addToCart3) - (Dynamic locator variable)</description>
+      <id>7f55775b-fe92-4f89-a67a-a1dc62868ba2</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-assam-morning'</defaultValue>
+      <description>Step 12: Click on button addToCartItem (addToCartAssamMorning) -> Navigate to page '' - (Dynamic locator variable)</description>
+      <id>1573ac0e-fa06-4dc6-9ab3-e0947d89a27e</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-assam-morning'</defaultValue>
+      <description>Step 14: Click on button addToCartItem (addToCartAssamMorning) - (Dynamic locator variable)</description>
+      <id>9c2b43a5-43df-4e1f-bfb2-3cbb299dc4d6</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-assam-morning'</defaultValue>
+      <description>Step 16: Click on button addToCartItem (addToCartAssamMorning) - (Dynamic locator variable)</description>
+      <id>da68805c-ed6c-4863-8364-8a77e2328e47</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-sencha-green'</defaultValue>
+      <description>Step 18: Click on button addToCartItem (addToCartSenchaGreen2) - (Dynamic locator variable)</description>
+      <id>8e6d2204-4032-4c38-a287-19692a8c25d0</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-masala-chai'</defaultValue>
+      <description>Step 20: Click on button addToCartItem (addToCartMasalaChai) - (Dynamic locator variable)</description>
+      <id>6e760fbf-0df2-4fc2-899c-0b12f6743031</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'product-tulsi-ginger'</defaultValue>
+      <description>Step 22: Click on button addToCartItem (addToCart3) - (Dynamic locator variable)</description>
+      <id>01441684-dd2b-472e-8dfe-2b6ebf2c499b</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_DataTestid_9</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-sencha-green'</defaultValue>
+      <description>Step 4: Click on button addToCartItem (addToCartSenchaGreen2) - (Dynamic locator variable)</description>
+      <id>6636e822-634b-460d-b1e3-cf1bd13fb2b5</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-masala-chai'</defaultValue>
+      <description>Step 6: Click on button addToCartItem (addToCartMasalaChai) - (Dynamic locator variable)</description>
+      <id>572e6a7f-691b-4588-8559-a78c1b44525b</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-assam-morning'</defaultValue>
+      <description>Step 8: Click on button addToCartItem (addToCartAssamMorning) - (Dynamic locator variable)</description>
+      <id>b100f890-2b29-4c09-a9c1-36d3e636af05</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-tulsi-ginger'</defaultValue>
+      <description>Step 10: Click on button addToCartItem (addToCart3) - (Dynamic locator variable)</description>
+      <id>5bb73ad0-38c5-4c81-8963-8062b61be54a</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-assam-morning'</defaultValue>
+      <description>Step 12: Click on button addToCartItem (addToCartAssamMorning) -> Navigate to page '' - (Dynamic locator variable)</description>
+      <id>00463970-82cb-45ec-8d53-86558056eb1a</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-assam-morning'</defaultValue>
+      <description>Step 14: Click on button addToCartItem (addToCartAssamMorning) - (Dynamic locator variable)</description>
+      <id>c09bb063-b26d-4fb0-92e1-7e2d7eec7146</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-assam-morning'</defaultValue>
+      <description>Step 16: Click on button addToCartItem (addToCartAssamMorning) - (Dynamic locator variable)</description>
+      <id>dccaf4f3-7f15-4873-a5b5-0e8528b822a9</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-sencha-green'</defaultValue>
+      <description>Step 18: Click on button addToCartItem (addToCartSenchaGreen2) - (Dynamic locator variable)</description>
+      <id>84e91b05-33cc-404e-8aeb-54d487cb7d2e</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-masala-chai'</defaultValue>
+      <description>Step 20: Click on button addToCartItem (addToCartMasalaChai) - (Dynamic locator variable)</description>
+      <id>c9be0357-cbee-4c6f-9802-987913234052</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'#add-tulsi-ginger'</defaultValue>
+      <description>Step 22: Click on button addToCartItem (addToCart3) - (Dynamic locator variable)</description>
+      <id>7d9f9d82-1280-404b-bdcc-086569bdc58a</id>
+      <masked>false</masked>
+      <name>button_addToCartItem_css_value_9</name>
+   </variable>
+   <variable>
+      <defaultValue>'Green'</defaultValue>
+      <description>Step 3: Click on button filterOptions (filterGreen) - (Dynamic locator variable)</description>
+      <id>1886aaf7-4c09-41ec-86cf-c4795972de27</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Spiced'</defaultValue>
+      <description>Step 5: Click on button filterOptions (filterSpiced) - (Dynamic locator variable)</description>
+      <id>9ec6bbaf-b861-423a-9c88-fad4f1273b02</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'All'</defaultValue>
+      <description>Step 7: Click on button filterOptions (filterAll) - (Dynamic locator variable)</description>
+      <id>8b3a0f65-08ba-4be6-937d-fd80106bc41b</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Herbal'</defaultValue>
+      <description>Step 9: Click on button filterOptions (filterHerbal) - (Dynamic locator variable)</description>
+      <id>8e129db6-2722-4b54-bfd2-e862fb89d8ae</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Black'</defaultValue>
+      <description>Step 11: Click on button filterOptions (filterBlack) - (Dynamic locator variable)</description>
+      <id>3ccfb129-566c-418d-b572-e1de758fcaf3</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'Black'</defaultValue>
+      <description>Step 15: Click on button filterOptions (filterBlack) - (Dynamic locator variable)</description>
+      <id>23f6c3df-575e-4ecb-8048-5003a53f4e10</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'Green'</defaultValue>
+      <description>Step 17: Click on button filterOptions (filterGreen) - (Dynamic locator variable)</description>
+      <id>47fd0038-3160-4190-bd16-e953f39a3f6d</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'Spiced'</defaultValue>
+      <description>Step 19: Click on button filterOptions (filterSpiced) - (Dynamic locator variable)</description>
+      <id>80a8e8ec-9e08-42b4-86eb-943607aee5f8</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'Herbal'</defaultValue>
+      <description>Step 21: Click on button filterOptions (filterHerbal) - (Dynamic locator variable)</description>
+      <id>91c0fc6d-eac9-4740-9ef2-0b7f9d9d4b36</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-green'</defaultValue>
+      <description>Step 3: Click on button filterOptions (filterGreen) - (Dynamic locator variable)</description>
+      <id>259b9975-927f-434f-8fb2-98cb69720b9e</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-spiced'</defaultValue>
+      <description>Step 5: Click on button filterOptions (filterSpiced) - (Dynamic locator variable)</description>
+      <id>1a936a78-178d-4706-832b-acd902457254</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-all'</defaultValue>
+      <description>Step 7: Click on button filterOptions (filterAll) - (Dynamic locator variable)</description>
+      <id>3c0f10e5-7e3d-425e-ad47-723a7d601694</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-herbal'</defaultValue>
+      <description>Step 9: Click on button filterOptions (filterHerbal) - (Dynamic locator variable)</description>
+      <id>69e684a0-266e-475c-abe1-38fb364d7c9d</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-black'</defaultValue>
+      <description>Step 11: Click on button filterOptions (filterBlack) - (Dynamic locator variable)</description>
+      <id>5d3e61bd-d138-4c3c-a83a-de856b7c8d40</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-black'</defaultValue>
+      <description>Step 15: Click on button filterOptions (filterBlack) - (Dynamic locator variable)</description>
+      <id>bfa8a671-e911-43dc-bd2d-27a896994fe6</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-green'</defaultValue>
+      <description>Step 17: Click on button filterOptions (filterGreen) - (Dynamic locator variable)</description>
+      <id>781dfbfb-24fc-4928-9d71-fbf8f516bdbe</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-spiced'</defaultValue>
+      <description>Step 19: Click on button filterOptions (filterSpiced) - (Dynamic locator variable)</description>
+      <id>2b336a47-bd59-451d-bdbe-de4f81c10000</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-herbal'</defaultValue>
+      <description>Step 21: Click on button filterOptions (filterHerbal) - (Dynamic locator variable)</description>
+      <id>a21b4c5a-30d3-48ed-8dfc-a580e5b57023</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'Udaipur'</defaultValue>
+      <description>Step 40: Enter input value in input city2 - (Input data variable)</description>
+      <id>c94b735e-7c43-4caf-bb61-4201eb084d75</id>
+      <masked>false</masked>
+      <name>input_city2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Demo'</defaultValue>
+      <description>Step 37: Enter input value in input fullName2 - (Input data variable)</description>
+      <id>3f94cf56-5fbe-4bf3-891b-0753a965aa2e</id>
+      <masked>false</masked>
+      <name>input_fullName2</name>
+   </variable>
+   <variable>
+      <defaultValue>'313001'</defaultValue>
+      <description>Step 41: Enter input value in input pinCode2 - (Input data variable)</description>
+      <id>f281cbcb-4483-434b-9bde-f3c81d5dab82</id>
+      <masked>false</masked>
+      <name>input_pinCode2</name>
+   </variable>
+   <variable>
+      <defaultValue>'10'</defaultValue>
+      <description>Step 25: Enter input value in input quantitySelection (quantitySenchaGreen) - (Input data variable)</description>
+      <id>6743bc0f-b13e-4afe-a2ce-dddb0cb6beaf</id>
+      <masked>false</masked>
+      <name>input_quantitySelection</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Step 28: Enter input value in input quantitySelection (quantityMasalaChai2) - (Input data variable)</description>
+      <id>2f3ef63d-9211-49d3-b055-c40f7e73b721</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'40'</defaultValue>
+      <description>Step 31: Enter input value in input quantitySelection (quantityAssamMorning2) - (Input data variable)</description>
+      <id>b77b86eb-325e-4683-b11f-60c00648b596</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'3'</defaultValue>
+      <description>Step 34: Enter input value in input quantitySelection (quantityTulsiGinger2) - (Input data variable)</description>
+      <id>67e28355-8c47-41dd-b0b0-72a52b80ece6</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Sencha Green'</defaultValue>
+      <description>Step 24: Click on input quantitySelection (quantitySenchaGreen) - (Dynamic locator variable)</description>
+      <id>540cd841-294f-4aad-be50-523dc2d0e51f</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Sencha Green'</defaultValue>
+      <description>Step 25: Enter input value in input quantitySelection (quantitySenchaGreen) - (Dynamic locator variable)</description>
+      <id>51ea49ab-9c87-49f4-b38a-6005a3a11c06</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Tulsi Ginger'</defaultValue>
+      <description>Step 34: Enter input value in input quantitySelection (quantityTulsiGinger2) - (Dynamic locator variable)</description>
+      <id>e28ac4e9-29bf-4979-8aa7-3836ec2a609a</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_10</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Masala Chai'</defaultValue>
+      <description>Step 26: Click on input quantitySelection (quantityMasalaChai) - (Dynamic locator variable)</description>
+      <id>bc285538-9d0f-46b7-90c5-29cfd6e0a245</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Masala Chai'</defaultValue>
+      <description>Step 27: Click on input quantitySelection (quantityMasalaChai2) - (Dynamic locator variable)</description>
+      <id>8f3d35d6-a1e8-47ae-96da-e05734a4fb9a</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Masala Chai'</defaultValue>
+      <description>Step 28: Enter input value in input quantitySelection (quantityMasalaChai2) - (Dynamic locator variable)</description>
+      <id>1475c41c-cd0e-4c4a-b616-18de5796a85e</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Assam Morning'</defaultValue>
+      <description>Step 29: Click on input quantitySelection (quantityAssamMorning) - (Dynamic locator variable)</description>
+      <id>0a8e2bfd-a708-4845-92cb-42b1c04cf7c8</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Assam Morning'</defaultValue>
+      <description>Step 30: Click on input quantitySelection (quantityAssamMorning2) - (Dynamic locator variable)</description>
+      <id>bef97a02-600c-448f-a466-2c1a49531662</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Assam Morning'</defaultValue>
+      <description>Step 31: Enter input value in input quantitySelection (quantityAssamMorning2) - (Dynamic locator variable)</description>
+      <id>e73ec39e-cc08-4cf0-b7e9-3a0d166135bd</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Tulsi Ginger'</defaultValue>
+      <description>Step 32: Click on input quantitySelection (quantityTulsiGinger) - (Dynamic locator variable)</description>
+      <id>48909705-6e45-49ba-810e-d03c9e30bde6</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'Quantity for Tulsi Ginger'</defaultValue>
+      <description>Step 33: Click on input quantitySelection (quantityTulsiGinger2) - (Dynamic locator variable)</description>
+      <id>ceeae667-bc5b-4bf1-b838-3bd2ddd50697</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_CartRowSenchaGreen_9</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-sencha-green'</defaultValue>
+      <description>Step 24: Click on input quantitySelection (quantitySenchaGreen) - (Dynamic locator variable)</description>
+      <id>89f4aec3-6af7-4936-9565-6d1644132d8c</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-sencha-green'</defaultValue>
+      <description>Step 25: Enter input value in input quantitySelection (quantitySenchaGreen) - (Dynamic locator variable)</description>
+      <id>db9c2d0d-d915-4996-8ac5-65840ecd54f5</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-tulsi-ginger'</defaultValue>
+      <description>Step 34: Enter input value in input quantitySelection (quantityTulsiGinger2) - (Dynamic locator variable)</description>
+      <id>81ac074f-5ad5-4398-8df6-aa75a9891ace</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_10</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-masala-chai'</defaultValue>
+      <description>Step 26: Click on input quantitySelection (quantityMasalaChai) - (Dynamic locator variable)</description>
+      <id>855728d0-7579-48b9-a809-1624e5d4e80c</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-masala-chai'</defaultValue>
+      <description>Step 27: Click on input quantitySelection (quantityMasalaChai2) - (Dynamic locator variable)</description>
+      <id>efb3fcc5-9fa2-4cdb-916f-d409b7d907a6</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-masala-chai'</defaultValue>
+      <description>Step 28: Enter input value in input quantitySelection (quantityMasalaChai2) - (Dynamic locator variable)</description>
+      <id>438e1f73-de3e-4046-94e6-b08cf67bdeb5</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-assam-morning'</defaultValue>
+      <description>Step 29: Click on input quantitySelection (quantityAssamMorning) - (Dynamic locator variable)</description>
+      <id>94590a38-94d9-429f-8de1-3be2595565e9</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-assam-morning'</defaultValue>
+      <description>Step 30: Click on input quantitySelection (quantityAssamMorning2) - (Dynamic locator variable)</description>
+      <id>710e5c27-f70f-4ad1-8f43-bd90ec2e6409</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-assam-morning'</defaultValue>
+      <description>Step 31: Enter input value in input quantitySelection (quantityAssamMorning2) - (Dynamic locator variable)</description>
+      <id>dd99ffbb-ac9a-4a04-8833-41f342861287</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-tulsi-ginger'</defaultValue>
+      <description>Step 32: Click on input quantitySelection (quantityTulsiGinger) - (Dynamic locator variable)</description>
+      <id>3d3323d4-1115-48b4-ace2-0c77341db1ba</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'cart-row-tulsi-ginger'</defaultValue>
+      <description>Step 33: Click on input quantitySelection (quantityTulsiGinger2) - (Dynamic locator variable)</description>
+      <id>9c269600-9a2d-4f94-b3bf-57ad9562354a</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_DataTestid_9</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-sencha-green'</defaultValue>
+      <description>Step 24: Click on input quantitySelection (quantitySenchaGreen) - (Dynamic locator variable)</description>
+      <id>d6b0636c-f40e-45af-9457-599531f5947c</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-sencha-green'</defaultValue>
+      <description>Step 25: Enter input value in input quantitySelection (quantitySenchaGreen) - (Dynamic locator variable)</description>
+      <id>f71890f1-1258-4f8a-996c-fb7c97280e51</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-tulsi-ginger'</defaultValue>
+      <description>Step 34: Enter input value in input quantitySelection (quantityTulsiGinger2) - (Dynamic locator variable)</description>
+      <id>b13853b3-dad3-448f-9620-a47e181f5ead</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_10</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-masala-chai'</defaultValue>
+      <description>Step 26: Click on input quantitySelection (quantityMasalaChai) - (Dynamic locator variable)</description>
+      <id>d6cbc4bd-fe30-48c7-bec4-e8407c944bab</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-masala-chai'</defaultValue>
+      <description>Step 27: Click on input quantitySelection (quantityMasalaChai2) - (Dynamic locator variable)</description>
+      <id>afab5058-2a16-4207-8293-a8452d36492a</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-masala-chai'</defaultValue>
+      <description>Step 28: Enter input value in input quantitySelection (quantityMasalaChai2) - (Dynamic locator variable)</description>
+      <id>a325c996-64ab-434e-bcbc-e4920004058f</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-assam-morning'</defaultValue>
+      <description>Step 29: Click on input quantitySelection (quantityAssamMorning) - (Dynamic locator variable)</description>
+      <id>1c8f3c5d-fffb-415e-95df-18560e30b8c8</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-assam-morning'</defaultValue>
+      <description>Step 30: Click on input quantitySelection (quantityAssamMorning2) - (Dynamic locator variable)</description>
+      <id>5ae27b10-dc8b-4640-b2e9-e72300d29459</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_6</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-assam-morning'</defaultValue>
+      <description>Step 31: Enter input value in input quantitySelection (quantityAssamMorning2) - (Dynamic locator variable)</description>
+      <id>21a1f708-82a3-4f40-aea1-db2ba60733a9</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_7</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-tulsi-ginger'</defaultValue>
+      <description>Step 32: Click on input quantitySelection (quantityTulsiGinger) - (Dynamic locator variable)</description>
+      <id>0c5afd94-2a46-4246-a156-7ace4aa4b60b</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_8</name>
+   </variable>
+   <variable>
+      <defaultValue>'#qty-tulsi-ginger'</defaultValue>
+      <description>Step 33: Click on input quantitySelection (quantityTulsiGinger2) - (Dynamic locator variable)</description>
+      <id>2fcc541d-a8c1-4211-952d-d188a1b9110f</id>
+      <masked>false</masked>
+      <name>input_quantitySelection_css_value_9</name>
+   </variable>
+   <variable>
+      <defaultValue>'19, Bohra Ganesh Road, samrat nagar'</defaultValue>
+      <description>Step 39: Enter input value in input streetAddress2 - (Input data variable)</description>
+      <id>bab7b63c-4502-41c7-a224-db4e41f92e7f</id>
+      <masked>false</masked>
+      <name>input_streetAddress2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cart10'</defaultValue>
+      <description>Step 23: Click on link cartOverview (cart2) -> Navigate to page '/cart' - (Dynamic locator variable)</description>
+      <id>b023aa58-302a-4324-802a-80ea8c53b21a</id>
+      <masked>false</masked>
+      <name>link_cartOverview_InternalRoleLinkName</name>
+   </variable>
+   <variable>
+      <defaultValue>'#nav-cart'</defaultValue>
+      <description>Step 23: Click on link cartOverview (cart2) -> Navigate to page '/cart' - (Dynamic locator variable)</description>
+      <id>db5283ce-9727-4171-8d00-bad10b8674ca</id>
+      <masked>false</masked>
+      <name>link_cartOverview_css_value</name>
+   </variable>
+   <customField>
+      <flow>
+         <id>1ff5229a-5397-43e6-9014-d9a20c6ae07a</id>
+      </flow>
+   </customField>
+</TestCaseEntity>
