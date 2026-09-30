@@ -19,7 +19,7 @@ TrueTestScripts.navigate("/")
 
 "Step 2: Click on link browseAllTeas -> Navigate to page '/shop'"
 
-TrueTestScripts.click(findTestObject('AI-Generated/Vercel QA/Page_home/link_browseAllTeas'))
+TrueTestScripts.click(findTestObject('AI-Generated/Vercel QA/Page_home/link_browseAllTeas_1'))
 
 "Step 3: Click on button filterOptions (filterGreen)"
 
