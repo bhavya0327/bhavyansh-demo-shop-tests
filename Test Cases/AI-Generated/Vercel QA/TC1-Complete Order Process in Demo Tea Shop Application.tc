@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Navigate to the tea shop, add items to the cart, and proceed to checkout. Fill in personal and payment details to place an order successfully.</description>
+   <name>TC1-Complete Order Process in Demo Tea Shop Application</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5faae449-01ea-4502-9a16-63cf53f5bb27</testCaseGuid>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;status&quot;: &quot;DRAFT&quot;, &quot;source&quot;: &quot;User Session&quot;}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <integratedEntity>
+      <productName>TRUETEST</productName>
+      <properties>
+         <entry>
+            <key>flowId</key>
+            <value>28aa7f38-c3cb-476b-9520-2896f209094b</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <origin>TRUETEST</origin>
+   <variable>
+      <defaultValue>'Spiced'</defaultValue>
+      <description>Step 22: Click on button filterType (filterSpiced) - (Dynamic locator variable)</description>
+      <id>7ba2cf47-f511-45f6-95c7-25e284825962</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Herbal'</defaultValue>
+      <description>Step 23: Click on button filterType (filterHerbal) -> Navigate to page '' - (Dynamic locator variable)</description>
+      <id>81bf606e-28f5-4bd1-91f0-8704dd0816a0</id>
+      <masked>false</masked>
+      <name>button_filterOptions_InternalRoleButtonName_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-spiced'</defaultValue>
+      <description>Step 22: Click on button filterType (filterSpiced) - (Dynamic locator variable)</description>
+      <id>35904976-2bb4-49b7-85fe-245a83959a48</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value</name>
+   </variable>
+   <variable>
+      <defaultValue>'#filter-herbal'</defaultValue>
+      <description>Step 23: Click on button filterType (filterHerbal) -> Navigate to page '' - (Dynamic locator variable)</description>
+      <id>af07cda7-2854-455c-856b-01005681ee4d</id>
+      <masked>false</masked>
+      <name>button_filterOptions_css_value_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'jaipur'</defaultValue>
+      <description>Step 12: Enter input value in input city - (Input data variable)</description>
+      <id>d4e954c6-7c53-43dd-8a26-d6716af8906a</id>
+      <masked>false</masked>
+      <name>input_city</name>
+   </variable>
+   <variable>
+      <defaultValue>'{{email}}'</defaultValue>
+      <description>Step 8: Enter input value in input email - (Input data variable)</description>
+      <id>4837a15f-cbbd-46d0-b85a-8eb24ed162a6</id>
+      <masked>false</masked>
+      <name>input_email</name>
+   </variable>
+   <variable>
+      <defaultValue>'demo user'</defaultValue>
+      <description>Step 6: Enter input value in input fullName - (Input data variable)</description>
+      <id>8b15c522-8790-4621-906a-bc4026a47c46</id>
+      <masked>false</masked>
+      <name>input_fullName</name>
+   </variable>
+   <variable>
+      <defaultValue>'310001'</defaultValue>
+      <description>Step 14: Enter input value in input pinCode - (Input data variable)</description>
+      <id>a372f583-70de-4b94-8a1d-73dc619afd0e</id>
+      <masked>false</masked>
+      <name>input_pinCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'123 city'</defaultValue>
+      <description>Step 10: Enter input value in input streetAddress - (Input data variable)</description>
+      <id>762311f1-96ca-4bbb-85b6-3e83b45883f2</id>
+      <masked>false</masked>
+      <name>input_streetAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cart2'</defaultValue>
+      <description>Step 2: Click on link cart2 -> Navigate to page '/cart' - (Dynamic locator variable)</description>
+      <id>3a3ac5ff-8ee1-4522-bfbe-20927d3b2751</id>
+      <masked>false</masked>
+      <name>link_cartOverview_InternalRoleLinkName</name>
+   </variable>
+   <variable>
+      <defaultValue>'#nav-cart'</defaultValue>
+      <description>Step 2: Click on link cart2 -> Navigate to page '/cart' - (Dynamic locator variable)</description>
+      <id>45c3fc11-f1ab-4b7f-97aa-389fd1a3a4f5</id>
+      <masked>false</masked>
+      <name>link_cartOverview_css_value</name>
+   </variable>
+   <customField>
+      <flow>
+         <id>28aa7f38-c3cb-476b-9520-2896f209094b</id>
+      </flow>
+   </customField>
+</TestCaseEntity>
