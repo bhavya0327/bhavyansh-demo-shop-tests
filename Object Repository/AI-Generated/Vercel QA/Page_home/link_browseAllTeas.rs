@@ -7,27 +7,27 @@
    <imagePath></imagePath>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/main[1]/div[1]/section[1]/div[1]/a[1]</value>
+         <key>CSS</key>
+         <value>#h</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'btn' and @href = 'shop.html' and @id = 'hero-shop' and (text() = 'Browse all teas' or . = 'Browse all teas')]</value>
       </entry>
       <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#hero-shop</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'hero-shop' and @class = 'btn' and @href = 'shop.html' and (text() = 'Browse all teas' or . = 'Browse all teas')]</value>
+         <key>XPATH</key>
+         <value>//body/main[1]/div[1]/section[1]/div[1]/a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=link[name="Browse all teas"s]</value>
+         <value>internal:role=link[name=&quot;Browse all teas&quot;s]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn</value>
-      <webElementGuid>f937c44a-ce01-4efb-b89f-649014f07de1</webElementGuid>
+      <webElementGuid>4b9106dd-97bc-4673-acaf-25e346124f91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>href</name>
       <type>Main</type>
       <value>shop.html</value>
-      <webElementGuid>bfe26d86-8e0c-4d97-8a4a-35511b1a0f51</webElementGuid>
+      <webElementGuid>1889b997-e603-4c7d-b326-4717d006cbdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>id</name>
       <type>Main</type>
       <value>hero-shop</value>
-      <webElementGuid>c323a48b-e26d-47e9-acd4-91a4edcce9cd</webElementGuid>
+      <webElementGuid>528e3654-b494-4148-9452-6b8016d8e4be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,6 +62,6 @@
       <name>text</name>
       <type>Main</type>
       <value>Browse all teas</value>
-      <webElementGuid>3ee47151-e767-451a-978d-cefbc61e66fa</webElementGuid>
+      <webElementGuid>ebc1a769-03b3-44e5-bc22-0560bf378907</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
