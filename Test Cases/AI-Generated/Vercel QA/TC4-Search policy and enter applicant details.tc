@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search for a policy, enter applicant details, and open the application.</description>
+   <name>TC4-Search policy and enter applicant details</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;status&quot;: &quot;DRAFT&quot;, &quot;source&quot;: &quot;User Session&quot;}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <integratedEntity>
+      <productName>TRUETEST</productName>
+      <properties>
+         <entry>
+            <key>flowId</key>
+            <value>e2482a5c-4846-4718-80c9-f788afc9f8e2</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <origin>TRUETEST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dfbf014f-6174-4964-86f2-f71ebad8ee68</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2d215f61-4470-4214-b0c0-ae737dd741c3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d1624935-717a-4314-b782-10f23e25696f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d533393a-d879-4cf2-8ccd-066c1d657217</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c7606f75-6a09-43e3-9032-fe101438238d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'24/12/2000'</defaultValue>
+      <description>Step 9: Enter input value in input birthDate - (Input data variable)</description>
+      <id>2d215f61-4470-4214-b0c0-ae737dd741c3</id>
+      <masked>false</masked>
+      <name>input_birthDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'{{name}}'</defaultValue>
+      <description>Step 7: Enter input value in input firstName - (Input data variable)</description>
+      <id>d1624935-717a-4314-b782-10f23e25696f</id>
+      <masked>false</masked>
+      <name>input_firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'{{password}}'</defaultValue>
+      <description>Step 3: Enter input value in input policyNumber - (Input data variable)</description>
+      <id>d533393a-d879-4cf2-8ccd-066c1d657217</id>
+      <masked>false</masked>
+      <name>input_policyNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Step 5: Double-click on td object - (Dynamic locator variable)</description>
+      <id>c7606f75-6a09-43e3-9032-fe101438238d</id>
+      <masked>false</masked>
+      <name>td_object_passwordRedacted</name>
+   </variable>
+</TestCaseEntity>

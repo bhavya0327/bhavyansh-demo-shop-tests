@@ -18,10 +18,6 @@
          <key>CSS</key>
          <value>#search-panel &gt; .primary</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'searchBtn' and @type = 'button' and (text() = 'Search' or . = 'Search')]</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>

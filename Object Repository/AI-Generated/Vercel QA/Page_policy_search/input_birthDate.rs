@@ -18,10 +18,6 @@
          <key>CSS</key>
          <value>.invalid</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'TextBox_122' and @name = 'birthDate' and @type = 'text' and (text() = '' or . = '')]</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
@@ -45,8 +41,8 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>rsx-TextBox required invalid rsxHover</value>
-      <webElementGuid>59627d77-ff22-4e0b-a76f-f290c34497f5</webElementGuid>
+      <value>invalid required rsx-TextBox rsxHover</value>
+      <webElementGuid>25902099-69d8-409d-9855-3987a3c39244</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,22 +77,6 @@
       <webElementGuid>8481f085-aa52-4385-92ba-b0ab44e82055</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>place_holder</name>
-      <type>Main</type>
-      <value>MM/DD/YYYY</value>
-      <webElementGuid>d16d1753-2fdc-4f05-970d-867cd26ec5ed</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>MM/DD/YYYY</value>
-      <webElementGuid>b0101012-10a3-4253-ba65-41ac8f2efecf</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
@@ -111,5 +91,21 @@
       <type>Main</type>
       <value>text</value>
       <webElementGuid>e4247536-83d5-40dc-953e-3b60fb4afe64</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>place_holder</name>
+      <type>Main</type>
+      <value>MM/DD/YYYY</value>
+      <webElementGuid>d16d1753-2fdc-4f05-970d-867cd26ec5ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>MM/DD/YYYY</value>
+      <webElementGuid>b0101012-10a3-4253-ba65-41ac8f2efecf</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

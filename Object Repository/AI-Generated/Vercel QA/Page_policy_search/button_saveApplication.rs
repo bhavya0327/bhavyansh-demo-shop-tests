@@ -18,10 +18,6 @@
          <key>CSS</key>
          <value>#application-panel &gt; .primary</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'saveBtn' and @type = 'button' and (text() = 'Save application' or . = 'Save application')]</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
