@@ -2,13 +2,21 @@
 <TestCaseEntity>
    <description>Search for a policy, enter applicant details, and open the application.</description>
    <name>TC4-Search policy and enter applicant details</name>
-   <tag></tag>
+   <tag>sync-test-1</tag>
    <integratedEntity>
       <productName>TESTOPS</productName>
       <properties>
          <entry>
             <key>integratedValue</key>
             <value>{&quot;status&quot;: &quot;DRAFT&quot;, &quot;source&quot;: &quot;User Session&quot;}</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Bhavyansh</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>4bee2b97-6f1d-4498-9b3c-d0e211a9e992</value>
          </entry>
       </properties>
       <type>TESTCASE</type>
