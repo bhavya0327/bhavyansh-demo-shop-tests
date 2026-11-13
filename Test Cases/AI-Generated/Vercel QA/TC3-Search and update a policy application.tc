@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search for a policy, open its application, enter applicant details, and save the application.</description>
+   <name>TC3-Search and update a policy application</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;status&quot;: &quot;DRAFT&quot;, &quot;source&quot;: &quot;User Session&quot;}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <integratedEntity>
+      <productName>TRUETEST</productName>
+      <properties>
+         <entry>
+            <key>flowId</key>
+            <value>820edd36-f2e6-4e5d-91b7-37e6ffcab6d7</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <origin>TRUETEST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f69ff5d7-ee14-431d-ad91-4be0b96885df</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>74b23b90-1d58-4073-a29c-4310b916cf93</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>59fb0cee-62aa-4ce5-bbfc-319cf795d6ca</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>929a4209-a3e1-472b-b2a8-8539c3d1aca5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'11/11/1996'</defaultValue>
+      <description>Step 10: Enter input value in input birthDate2 - (Input data variable)</description>
+      <id>74b23b90-1d58-4073-a29c-4310b916cf93</id>
+      <masked>false</masked>
+      <name>input_birthDate2</name>
+   </variable>
+   <variable>
+      <defaultValue>'gURANTEED'</defaultValue>
+      <description>Step 8: Enter input value in input firstName2 - (Input data variable)</description>
+      <id>59fb0cee-62aa-4ce5-bbfc-319cf795d6ca</id>
+      <masked>false</masked>
+      <name>input_firstName2</name>
+   </variable>
+   <variable>
+      <defaultValue>'LS622384926'</defaultValue>
+      <description>Step 3: Enter input value in input policyNumber2 - (Input data variable)</description>
+      <id>929a4209-a3e1-472b-b2a8-8539c3d1aca5</id>
+      <masked>false</masked>
+      <name>input_policyNumber2</name>
+   </variable>
+</TestCaseEntity>
