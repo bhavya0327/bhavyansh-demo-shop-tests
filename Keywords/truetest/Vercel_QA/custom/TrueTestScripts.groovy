@@ -303,6 +303,47 @@ public class TrueTestScripts {
         }
     }
 
+    public static void openUi5HiddenSelect(com.kms.katalon.core.testobject.TestObject target) {
+        if (target == null) throw new IllegalArgumentException('A recorded UI5 select target is required')
+        def WebUI = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
+        def helper = com.kms.katalon.core.webui.common.WebUiCommonHelper
+        def driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver()
+        driver.switchTo().defaultContent()
+        def ownerInfo
+        try {
+            helper.switchToParentFrame(target, 20)
+            def recorded = helper.findWebElement(target, 20)
+            if (recorded == null) throw new IllegalStateException('The recorded UI5 select proxy was not found')
+            ownerInfo = WebUI.executeJavaScript('''
+                const proxy = arguments[0];
+                if (!proxy || !proxy.id?.endsWith('-hiddenSelect') || !proxy.isConnected) return null;
+                const nativeSelect = proxy.tagName === 'SELECT';
+                const ui5Proxy = proxy.tagName === 'DIV' && proxy.classList.contains('sapMSltHiddenSelect') &&
+                    proxy.getAttribute('role') === 'combobox' && proxy.getAttribute('aria-haspopup') === 'listbox';
+                if (!nativeSelect && !ui5Proxy) return null;
+                const root = proxy.getRootNode();
+                const owner = proxy.closest('.sapMSlt');
+                if (!root || !owner || !owner.id || !owner.isConnected) return null;
+                const owners = Array.from(root.querySelectorAll('[id]')).filter(item => item.id === owner.id);
+                const proxies = Array.from(owner.querySelectorAll('[id]')).filter(item => item.id.endsWith('-hiddenSelect'));
+                if (owners.length !== 1 || proxies.length !== 1 || proxies[0] !== proxy) return null;
+                return {id: owner.id, expanded: owner.getAttribute('aria-expanded') === 'true'};
+            ''', [recorded])
+        } finally {
+            WebUI.switchToDefaultContent()
+        }
+        if (!ownerInfo?.id) throw new IllegalStateException('Recorded UI5 select has no unique connected owner')
+        if (ownerInfo.expanded == true) return
+        def owner = new com.kms.katalon.core.testobject.TestObject('Recorded UI5 select owner')
+        owner.addProperty('id', com.kms.katalon.core.testobject.ConditionType.EQUALS, ownerInfo.id.toString())
+        owner.setParentObject(target.getParentObject())
+        owner.setParentObjectShadowRoot(target.isParentObjectShadowRoot())
+        if (!WebUI.waitForElementClickable(owner, 20)) {
+            throw new IllegalStateException('The owning UI5 select did not become clickable')
+        }
+        WebUI.enhancedClick(owner)
+    }
+
     public static void refresh() {
         WebUI.refresh()
         WebUI.waitForPageLoad(timeout("waitForPageLoadTimeOut"))
@@ -421,17 +462,61 @@ public class TrueTestScripts {
 
     public static void setTinyMCEContent(TestObject to, String content) {
         int editorTimeout = timeout("waitForEditorReadyTimeOut")
-        WebUI.waitForElementClickable(to, editorTimeout)
-        WebUI.executeJavaScript(
-            """
-                const mceInstance = window.tinyMCE?.activeEditor;
-                if (!mceInstance) {
-                    return "No TinyMCE instance found";
-                }
-                return mceInstance.setContent(arguments[0]);
-            """,
-            [content]
-        )
+        def driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver()
+        driver.switchTo().defaultContent()
+        WebUI.waitForElementPresent(to, editorTimeout)
+        long deadline = System.currentTimeMillis() + editorTimeout * 1000L
+        boolean applied = false
+        while (!applied && System.currentTimeMillis() < deadline) {
+            try {
+                com.kms.katalon.core.webui.common.WebUiCommonHelper.switchToParentFrame(to, editorTimeout)
+                def target = com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(to, editorTimeout)
+                applied = WebUI.executeJavaScript(
+                    """
+                        const target = arguments[0];
+                        let owner = target.ownerDocument.defaultView;
+                        const candidates = [];
+                        const visited = new Set();
+                        // A classic editor body lives in a child document; its manager lives on the host.
+                        while (owner && !visited.has(owner)) {
+                            visited.add(owner);
+                            try {
+                                const manager = owner.tinymce || owner.tinyMCE;
+                                candidates.push(...(manager?.get?.() || []));
+                                const parent = owner.parent;
+                                if (!parent || parent === owner) break;
+                                owner = parent;
+                            } catch (error) {
+                                // Stop at a cross-origin frame boundary without targeting another editor.
+                                break;
+                            }
+                        }
+                        const editor = candidates.find(instance => {
+                            const container = instance.getContainer?.();
+                            const body = instance.getBody?.();
+                            return !instance.removed && instance.initialized !== false &&
+                                ((container && (container === target || container.contains(target))) ||
+                                 target === instance.getElement?.() || target === body || body?.contains?.(target));
+                        });
+                        if (!editor) return false;
+                        editor.focus();
+                        editor.setContent(arguments[1]);
+                        editor.save();
+                        const emit = typeof editor.dispatch === 'function'
+                            ? editor.dispatch.bind(editor) : editor.fire.bind(editor);
+                        ['input', 'change', 'blur'].forEach(name => emit(name));
+                        return true;
+                    """,
+                    [target, content]
+                ) == true
+            } finally {
+                driver.switchTo().defaultContent()
+            }
+            if (!applied) Thread.sleep(100)
+        }
+        if (!applied) {
+            throw new IllegalStateException('TinyMCE editor for the requested Test Object is not ready')
+        }
     }
 
     public static void dragAndDropToTargetByDirection(TestObject sourceTo, TestObject targetTo, String direction = "CENTER", int padding = 10) {
@@ -559,6 +644,50 @@ public class TrueTestScripts {
         }
 
         return newHandle
+    }
+
+
+    // Recorded tab IDs are stable; Selenium window handles and their iteration order are not.
+    public static Map<String, String> recordedWindows = [:]
+    public static Set<String> recordedBeforeHandles = null
+
+    public static void captureRecordedWindows() {
+        recordedBeforeHandles = new HashSet<>(DriverFactory.getWebDriver().getWindowHandles())
+    }
+
+    public static void switchToRecordedWindow(String tabId, boolean reset, int timeout = 10) {
+        WebDriver driver = DriverFactory.getWebDriver()
+        if (reset) {
+            recordedWindows = [(tabId): driver.getWindowHandle()]
+            recordedBeforeHandles = null
+            return
+        }
+        String handle = recordedWindows[tabId]
+        if (handle == null) {
+            if (recordedBeforeHandles == null) {
+                throw new IllegalStateException("No window snapshot for recorded tab " + tabId)
+            }
+            new WebDriverWait(driver, Duration.ofSeconds(timeout)).until {
+                Set<String> opened = new HashSet<>(driver.getWindowHandles())
+                opened.removeAll(recordedBeforeHandles)
+                return !opened.isEmpty()
+            }
+            Set<String> opened = new HashSet<>(driver.getWindowHandles())
+            opened.removeAll(recordedBeforeHandles)
+            if (opened.size() != 1) {
+                throw new IllegalStateException("Cannot uniquely identify recorded tab " + tabId)
+            }
+            handle = opened.iterator().next()
+            recordedWindows[tabId] = handle
+            recordedBeforeHandles = null
+        }
+        if (!driver.getWindowHandles().contains(handle)) {
+            throw new IllegalStateException("Recorded tab is no longer open: " + tabId)
+        }
+        // The previously selected window may already have closed itself.
+        driver.switchTo().window(handle)
+        WebUI.waitForPageLoad(timeout)
+        WebUI.waitForAngularLoad(timeout)
     }
 
     public static void acceptAlert() {

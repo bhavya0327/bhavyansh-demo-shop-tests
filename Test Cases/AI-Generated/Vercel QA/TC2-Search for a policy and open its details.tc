@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search for a policy, enter additional information, and open the selected policy details.</description>
+   <name>TC2-Search for a policy and open its details</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;status&quot;: &quot;DRAFT&quot;, &quot;source&quot;: &quot;User Session&quot;}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <integratedEntity>
+      <productName>TRUETEST</productName>
+      <properties>
+         <entry>
+            <key>flowId</key>
+            <value>5f2b8e5d-191a-4a0f-9df6-aec4a16d6592</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <origin>TRUETEST</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26659c76-2194-46b5-8731-e7220d2f8c16</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>73ad7f57-87eb-4b79-885f-4369a13cbdb4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8f9a16c0-5df1-4137-b416-8518abfce227</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>09bb4d89-7376-42cd-918b-ada977f7091d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>05b73d32-4c95-49bf-9303-81212aa9d283</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b7c94093-9242-4161-a81a-d7521b9ba260</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>73456e40-eded-483d-aca1-57cdbc8ca958</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0a09cec1-396b-467d-bf46-8f9cfe7895b9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>47f06ef4-42f3-4ab9-afa0-7cd87f1e0b8c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1af33f6a-58a1-4b52-b674-dcfeaca47d4c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9ed41b6a-3640-402f-93c0-3cab2bb048cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0f5faad9-603e-4f69-a103-3639a07dd185</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bad28dbf-60b0-4d7c-951e-c509774238d8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7f991edd-4824-4b71-b25e-0782f7f52695</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3ae706fb-a8dd-4da4-94c9-19a331e5e776</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2dba1b20-9441-44ce-97ff-e284ed7eedd5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>86869210-ce08-490e-97d9-9921e827b550</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e7110138-722e-496b-9b12-ef8ae2f98cf8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>05d69d61-8c0e-4039-88ce-51b7c332fb94</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d873a672-a90a-4920-a7ef-5e2427fa797a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Search'</defaultValue>
+      <description>Step 4: Click on button object (search) - (Dynamic locator variable)</description>
+      <id>73ad7f57-87eb-4b79-885f-4369a13cbdb4</id>
+      <masked>false</masked>
+      <name>button_object_InternalRoleButtonName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Save application'</defaultValue>
+      <description>Step 10: Click on button object (saveApplication) -> Navigate to page '' - (Dynamic locator variable)</description>
+      <id>8f9a16c0-5df1-4137-b416-8518abfce227</id>
+      <masked>false</masked>
+      <name>button_object_InternalRoleButtonName_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'#search-panel > .primary'</defaultValue>
+      <description>Step 4: Click on button object (search) - (Dynamic locator variable)</description>
+      <id>09bb4d89-7376-42cd-918b-ada977f7091d</id>
+      <masked>false</masked>
+      <name>button_object_css_value</name>
+   </variable>
+   <variable>
+      <defaultValue>'#application-panel > .primary'</defaultValue>
+      <description>Step 10: Click on button object (saveApplication) -> Navigate to page '' - (Dynamic locator variable)</description>
+      <id>05b73d32-4c95-49bf-9303-81212aa9d283</id>
+      <masked>false</masked>
+      <name>button_object_css_value_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'LS62384926'</defaultValue>
+      <description>Step 3: Enter input value in input object (policyNumber2) - (Input data variable)</description>
+      <id>b7c94093-9242-4161-a81a-d7521b9ba260</id>
+      <masked>false</masked>
+      <name>input_object</name>
+   </variable>
+   <variable>
+      <defaultValue>'gUARANTEED'</defaultValue>
+      <description>Step 7: Enter input value in input object (firstName2) - (Input data variable)</description>
+      <id>73456e40-eded-483d-aca1-57cdbc8ca958</id>
+      <masked>false</masked>
+      <name>input_object_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'11/11/1996'</defaultValue>
+      <description>Step 9: Enter input value in input object (birthDate2) - (Input data variable)</description>
+      <id>0a09cec1-396b-467d-bf46-8f9cfe7895b9</id>
+      <masked>false</masked>
+      <name>input_object_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Policy #'</defaultValue>
+      <description>Step 2: Click on input object (policyNumber) - (Dynamic locator variable)</description>
+      <id>47f06ef4-42f3-4ab9-afa0-7cd87f1e0b8c</id>
+      <masked>false</masked>
+      <name>input_object_InternalLabel</name>
+   </variable>
+   <variable>
+      <defaultValue>'Policy #'</defaultValue>
+      <description>Step 3: Enter input value in input object (policyNumber2) - (Dynamic locator variable)</description>
+      <id>1af33f6a-58a1-4b52-b674-dcfeaca47d4c</id>
+      <masked>false</masked>
+      <name>input_object_InternalLabel_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'First Name'</defaultValue>
+      <description>Step 6: Click on input object (firstName) - (Dynamic locator variable)</description>
+      <id>9ed41b6a-3640-402f-93c0-3cab2bb048cb</id>
+      <masked>false</masked>
+      <name>input_object_InternalLabel_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'First Name'</defaultValue>
+      <description>Step 7: Enter input value in input object (firstName2) - (Dynamic locator variable)</description>
+      <id>0f5faad9-603e-4f69-a103-3639a07dd185</id>
+      <masked>false</masked>
+      <name>input_object_InternalLabel_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Birth Date'</defaultValue>
+      <description>Step 8: Click on input object (birthDate) - (Dynamic locator variable)</description>
+      <id>bad28dbf-60b0-4d7c-951e-c509774238d8</id>
+      <masked>false</masked>
+      <name>input_object_InternalLabel_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'Birth Date'</defaultValue>
+      <description>Step 9: Enter input value in input object (birthDate2) - (Dynamic locator variable)</description>
+      <id>7f991edd-4824-4b71-b25e-0782f7f52695</id>
+      <masked>false</masked>
+      <name>input_object_InternalLabel_5</name>
+   </variable>
+   <variable>
+      <defaultValue>'.rsxHover'</defaultValue>
+      <description>Step 2: Click on input object (policyNumber) - (Dynamic locator variable)</description>
+      <id>3ae706fb-a8dd-4da4-94c9-19a331e5e776</id>
+      <masked>false</masked>
+      <name>input_object_css_value</name>
+   </variable>
+   <variable>
+      <defaultValue>'.rsxFocus'</defaultValue>
+      <description>Step 3: Enter input value in input object (policyNumber2) - (Dynamic locator variable)</description>
+      <id>2dba1b20-9441-44ce-97ff-e284ed7eedd5</id>
+      <masked>false</masked>
+      <name>input_object_css_value_1</name>
+   </variable>
+   <variable>
+      <defaultValue>'.rsxHover'</defaultValue>
+      <description>Step 6: Click on input object (firstName) - (Dynamic locator variable)</description>
+      <id>86869210-ce08-490e-97d9-9921e827b550</id>
+      <masked>false</masked>
+      <name>input_object_css_value_2</name>
+   </variable>
+   <variable>
+      <defaultValue>'.rsxFocus'</defaultValue>
+      <description>Step 7: Enter input value in input object (firstName2) - (Dynamic locator variable)</description>
+      <id>e7110138-722e-496b-9b12-ef8ae2f98cf8</id>
+      <masked>false</masked>
+      <name>input_object_css_value_3</name>
+   </variable>
+   <variable>
+      <defaultValue>'.invalid'</defaultValue>
+      <description>Step 8: Click on input object (birthDate) - (Dynamic locator variable)</description>
+      <id>05d69d61-8c0e-4039-88ce-51b7c332fb94</id>
+      <masked>false</masked>
+      <name>input_object_css_value_4</name>
+   </variable>
+   <variable>
+      <defaultValue>'.invalid'</defaultValue>
+      <description>Step 9: Enter input value in input object (birthDate2) - (Dynamic locator variable)</description>
+      <id>d873a672-a90a-4920-a7ef-5e2427fa797a</id>
+      <masked>false</masked>
+      <name>input_object_css_value_5</name>
+   </variable>
+</TestCaseEntity>
