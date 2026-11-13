@@ -2,7 +2,7 @@
 <TestCaseEntity>
    <description>Search for a policy, open its application, enter applicant details, and save the application.</description>
    <name>TC3-Search and update a policy application</name>
-   <tag></tag>
+   <tag>ip</tag>
    <integratedEntity>
       <productName>TESTOPS</productName>
       <properties>
